@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/background.avif);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  font-family: "Protest Riot", sans-serif;
+}
+
+.arow-gif {
+  display: none;
+  margin: auto;
+  margin-top: 50px;
+  width: 35%;
+}
+.dinner-gif {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 35%;
+}
+.question {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2;
+  color: #ff3366;
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+  position: relative;
+}
+
+.yes,
+.no {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.yes {
+  background-color: #00cc66;
+  left: 35%;
+}
+
+.no {
+  background-color: #ff3333;
+  left: 60%;
+}
+
+.yes:hover,
+.no:hover {
+  filter: brightness(90%);
+}
+
+.try-again {
+  margin: 10px 0 0 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(243, 177, 199);
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.well-done {
+  display: none;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2;
+  color: #ff3366;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .arow-gif {
+    width: 85%;
+  }
+
+  .dinner-gif {
+    width: 85%;
+  }
+
+  .yes,
+  .no {
+    position: absolute;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
